@@ -18,20 +18,20 @@ O modelo de domínio do projeto é composto pelas seguintes classes:
 
 ```mermaid
 classDiagram
-    **class** **Artista** {
+    class Artista {
         -id: Long
         -nome: String
         -tipo: TipoArtista
         +cadastrarMusica(Musica)
     }
 
-    **class** **Musica** {
+    class Musica {
         -id: Long
         -nome: String
         -artista: Artista
     }
 
-    **class** **TipoArtista** {
+    class TipoArtista {
         <<enumeration>>
         SOLO
         DUPLA
